@@ -1,0 +1,80 @@
+
+
+.main{
+    width: 100%;
+    height: auto;
+
+}
+
+
+
+.login-outer{
+    width: 100%;
+    height: 100vh;
+    /*border: 1px solid red;*/
+    background: url("/assets/images/login/beautiful-beach-wzdpjdlafduou991.jpg")center;
+    background-size: cover;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    filter: blur(0px);
+    /*-webkit-filter: blur(2px);*/
+
+}
+.login-inner{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.login-inner-wrapper{
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid red;*/
+
+}
+
+.img-1{
+    flex-basis: 210%;
+    background: url("https://img.freepik.com/free-photo/spectacular-top-view-from-drone-photo-beautiful-pink-beach-with-relaxing-sunlight-sea-water-waves-pounding-sand-shore-calmness-refreshing-beach-scenery-created-using-generative-ai_60438-2538.jpg?size=626&ext=jpg&ga=GA1.1.2113286524.1697250332&semt=sph")center;
+    background-size: cover;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+
+}
+
+.heading-text{
+    position: relative;
+    /*border: 1px solid red;*/
+    padding-top: 10px;
+    text-align: center;
+    /*padding-left: 10%!important;*/
+    font-size: 60px;
+    font-family: 'Roboto Slab', serif;
+    margin-top: 30%!important;
+    color:white;
+}
+.normal-text{
+    /*border: 1px solid red;*/
+    padding-left: 10%!important;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+.form-inner{
+   border-bottom-right-radius: 15px;
+   border-top-right-radius: 15px;
+
+}
+
+
+
+
+
