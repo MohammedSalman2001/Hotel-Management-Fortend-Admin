@@ -169,8 +169,14 @@
                         </div>
 
                         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <label for="category">Gender</label>
-                            <select name="" id="category" class="form-control">
+                            <label for="birthday">Birthday</label>
+                            <input type="date" id="birthday" name="birthday" class="form-control"
+                                   placeholder=" Address">
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <label for="gender">Gender</label>
+                            <select name="gender" id="gender" class="form-control">
                                 <option value="male">Male</option>
                                 <option value="female">Female</option>
                             </select>
@@ -221,14 +227,17 @@
 <script  src="https://kit.fontawesome.com/ac306f23ee.js" crossorigin="anonymous"></script>
 <script type="module" src="assets/script/db/db.js"></script>
 <script type="module" src="assets/script/controller/login.js"></script>
-<script src="assets/script/controller/dashboard.js"></script>
+<script type="module" src="assets/script/controller/dashboard.js"></script>
+<script type="module" src="assets/script/controller/user_controller.js"></script>
+<script type="module" src="assets/script/model/user.js"></script>
 <script>
     console.log(
-        $('#dashboard-form').hide(),
-        $('#user-form').hide(),
+        // $('#dashboard-form').hide(),
+        // // $('#user-form').hide(),
 
 
     )
+
 
 
 

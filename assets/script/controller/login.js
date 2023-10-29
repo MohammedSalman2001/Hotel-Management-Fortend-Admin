@@ -36,7 +36,7 @@ export class Login{
               saveKey("",token)
               console.log(token)
               $('#login-form').hide()
-              $('#dashboard-form').show()
+              // $('#dashboard-form').show()
           }).fail(e=>{
               console.log(e.responseJSON.message)
           });
