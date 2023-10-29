@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Hotel-Management-Fortend-Admin.iml" filepath="$PROJECT_DIR$/Hotel-Management-Fortend-Admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Hotel-Management-Fortend-Admin.iml" filepath="$PROJECT_DIR$/.idea/Hotel-Management-Fortend-Admin.iml" />
     </modules>
   </component>
 </project>
