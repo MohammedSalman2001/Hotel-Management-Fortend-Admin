@@ -18,11 +18,83 @@ export class UserController {
         });
 
 
-        $('')
+        $('#btnClear').click(e => {
+            this.clearForm()
+        })
+
+        $('#btnDelete').click(e => {
+
+        })
+
+        $('#btnUpdate').click(e => {
+            this.updateUser()
+        })
 
 
+        $('#header-inner-user').click(e => {
+            $('#user-form').hide()
+            $('#dashboard-form').show()
+
+        })
+    }
+
+
+
+
+
+    updateUser() {
+        let userName = $('#userName').val();
+        let email = $('#email').val()
+        let password = $('#password').val()
+        let birthday = $('#birthday').val()
+        let contact = $('#contact').val()
+        let gender = $('#gender').val();
+        var profilePic = $('#profilePic').prop('files')[0];
+        var nicFront = $('#nicFront').prop('files')[0];
+        var nicRear = $('#nicRear').prop('files')[0];
+        let nicNo = $("#nicNo").val();
+
+
+        var form = new FormData();
+        form.append("userName", userName);
+        form.append("email", email);
+        form.append("password", password);
+        form.append("birthday", birthday);
+        form.append("password", password);
+        form.append("gender", gender);
+        form.append("contact", contact);
+        if (profilePic)
+            form.append("profilePic", profilePic, "ab.jpg");
+        if (nicFront)
+            form.append("nicFront", nicFront, "aa.jpg");
+        if (nicRear)
+            form.append("nicRear", nicRear, "ac.jpg");
+
+
+        form.append("nicNo", nicNo);
+
+        var settings = {
+            "url": "http://localhost:8081/api/v1/user/0",
+            "method": "PUT",
+            "timeout": 0,
+            "headers": {
+                "Authorization": "Bearer " + getKey()
+            },
+            "processData": false,
+            "mimeType": "multipart/form-data",
+            "contentType": false,
+            "data": form
+        };
+
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+            $('#btnClear').trigger('click');
+        });
 
     }
+
+
+
 
     searchCustomer(email){
         var settings = {
@@ -37,25 +109,31 @@ export class UserController {
         $.ajax(settings).done(function (responseData) {
 
             $("#email").prop('readonly', true);
-            console.log(responseData.nicFrontByte)
+           /* console.log(responseData.nicFrontByte)
             console.log(responseData.nicRearByte)
             console.log(responseData.profilePic)
             console.log(responseData.nicFront)
-            console.log(responseData.nicRear)
+            console.log(responseData.nicRear)*/
+            console.log(responseData.password)
 
             $('#userName').val(responseData.username);
             $('#nicNo').val(responseData.usernic);
             $('#contact').val(responseData.contact);
             $('#email').val(responseData.email);
             $('#birthday').val(responseData.birthday);
+            $('#password').val(responseData.password)
+            $('#gender').val(responseData.gender);
 
-            console.log(responseData.birthday)
+            $("#nicNo").val(responseData.usernic);
+
+
             $('#nicFront-img-show').attr('src', "data:image/jpeg;base64," + responseData.nicFront); // Set the src attribute for an image element
             $('#nicRear-img-show').attr('src', "data:image/jpeg;base64," + responseData.nicRear);   // Set the src attribute for an image element
            $('#gender').val(responseData.gender)
-            //$('#remarks').text(responseData.remarks);
             $('#profilePic-img-show').attr('src', "data:image/jpeg;base64," + responseData.profilePic); // Set the src attribute for an image element
 
+
+            $('#search').val('')
 
         });
     }
@@ -68,10 +146,10 @@ export class UserController {
         let birthday = $('#birthday').val()
         let contact = $('#contact').val()
         let gender = $('#gender').val();
+        let nicNo = $("#nicNo").val();
         var profilePic = $('#profilePic').prop('files')[0];
         var nicFront = $('#nicFront').prop('files')[0];
         var nicRear = $('#nicRear').prop('files')[0];
-        let nicNo = $("#nicNo").val();
 
 
         console.log(userName)
@@ -120,13 +198,34 @@ export class UserController {
 
         $.ajax(settings).done(function (response) {
             console.log(response);
+            $('#btnClear').trigger('click');
+
+
         }).fail(e => {
             console.log(e.code)
         });
 
 
 
+    }
 
+
+    clearForm() {
+        $("#userName").val('');
+        $("#password").val('');
+        $("#email").val('');
+        $("#birthday").val('');
+        $("#gender").val('');
+        $('#profilePic').val('');
+        $('#nicFront').val('');
+        $('#nicRear').val('');
+        $("#nicNo").val('');
+
+        // Change the src of the image elements
+        $("#profilePic-img-show").attr('src', '');
+        $("#nicRear-img-show").attr('src', '');
+        $("#nicFront-img-show").attr('src', '');
+        $("#user_email").prop('readonly', false);
     }
 }
 
