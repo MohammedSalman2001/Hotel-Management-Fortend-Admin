@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/css/dashboard.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/user.css">
+    <link rel="stylesheet" href="assets/css/vehicle.css">
 </head>
 <body>
 
@@ -65,7 +66,8 @@
             <p class="logo"><span>N</span>-ext Travel</p>
             <a href="#" class="icon-a"><i class="fa fa-dashboard icons"></i> Dashboard</a>
             <a href="#" id="userLink" class="icon-a"><i class="fa fa-dashboard icons"></i> User</a>
-            <a href="#" class="icon-a"><i class="fa fa-users icons"></i> Vehicle</a>
+            <a href="#" id="vehicleLink" class="icon-a"><i class="fa fa-users icons"></i> Vehicle</a>
+
             <a href="#" class="icon-a"><i class="fa fa-list icons"></i> Hotel</a>
             <a href="#" class="icon-a"><i class="fa fa-shopping-bag icons"></i> Booking</a>
             <a href="guide.html" ,class="icon-a"><i class="fa fa-tasks icons"></i>Guide</a>
@@ -225,6 +227,7 @@
 
                     </div>
 
+
                     <div class="row">
                         <div class="col-12">
                             <input  type="search" name="search" id="search" placeholder="Search"
@@ -263,6 +266,223 @@
     <!--user-section-->
 
 
+    <!--vehicle section-->
+
+    <section id="vehicle-form" class="vehicle-section">
+        <header class="user-header">
+            <div id="vehicle-inner-user" class="header-inner"><h2>Next Travel Pvt. Ltd</h2></div>
+        </header>
+
+        <div class="user-inner-outer">
+            <div class="user-h2">
+                <h2 style="text-align: center"><i class="fa-solid fa-user"></i>Vehicle Management</h2>
+            </div>
+
+            <form action="">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <label for="vehicleName">Vehicle Name</label>
+                            <input type="text" id="vehicleName" name="vehicleName" class="form-control"
+                                   placeholder="Brand">
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <label for="fuelType">Fuel Type</label>
+                            <select name="fuelType" id="fuelType" class="form-control">
+                                <option value="economy">Patrol</option>
+                                <option value="midRange">Diesel</option>
+
+                            </select>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <label for="isHybrid">Hybrid or Non-Hybrid</label>
+                            <select name="isHybrid" id="isHybrid" class="form-control">
+                                <option value="hybrid">Hybrid</option>
+                                <option value="nonHybrid">Non-Hybrid</option>
+                            </select>
+
+
+                        </div>
+
+
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <label for="priceFor1Km">PriceFor1Km</label>
+                            <input type="number" id="priceFor1Km" name="priceFor1Km" class="form-control"
+                                   placeholder="Brand">
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <label for="priceFor100Km">PriceFor100Km</label>
+                            <input type="number" id="priceFor100Km" name="priceFor100Km" class="form-control"
+                                   placeholder="Brand">
+                        </div>
+
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <label for="fuelUsage">Fuel usage(Km/l)</label>
+                            <input type="text" id="fuelUsage" name="fuelUsage" class="form-control"
+                                   placeholder="Fuel usage(Km/l)">
+                  </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <label for="noOfSeats">NoOfSeats</label>
+                            <input type="int" id="noOfSeats" name="noOfSeats" class="form-control"
+                                   placeholder="Seat Capacity">
+                        </div>
+
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <label for="vehicleType">Vehicle Type</label>
+                            <select name="vehicleType" id="vehicleType" class="form-control">
+                                <option value="car">Car</option>
+                                <option value="van">Van</option>
+                                <option value="bus">Bus</option>
+                                <option value="suv">Suv</option>
+                            </select>
+                        </div>
+
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <label for="category">Category</label>
+                            <select name="category" id="category" class="form-control">
+                                <option value="economy">Economy</option>
+                                <option value="midRange">Mid-Range</option>
+                                <option value="Luxury">Luxury</option>
+                                <option value="superLuxury">Super-Luxury</option>
+                            </select>
+                        </div>
+
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <label for="transmission">Transmission Type</label>
+                            <select name="transmission" id="transmission" class="form-control">
+                                <option value="auto">Auto</option>
+                                <option value="manual">Manual</option>
+                            </select>
+                        </div>
+
+
+
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <h3>NicFront</h3>
+                            <div class="img-g">
+                                <img src="" alt="" id="vehicle_front_view_img" > <br><br>
+                                <input type="file" id="vehicle_front_view" name="vehicle_front_view" class="form-control"
+                                       placeholder="Driver Image">
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <h3>NicFront</h3>
+                            <div class="img-g">
+                                <img src="" alt="" id="vehicle_rear_view_img" > <br><br>
+                                <input type="file" id="vehicle_rear_view" name="vehicle_rear_view" class="form-control"
+                                       placeholder="Driver Image">
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <h3>NicFront</h3>
+                            <div class="img-g">
+                                <img src="" alt="" id="vehicle_side_view_img" > <br><br>
+                                <input type="file" id="vehicle_side_view" name="licenseImageFront" class="form-control"
+                                       placeholder="Driver Image">
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <h3>NicFront</h3>
+                            <div class="img-g">
+                                <img src="" alt="" id="vehicle_front_interior_img" > <br><br>
+                                <input type="file" id="vehicle_front_interior" name="licenseImageFront" class="form-control"
+                                       placeholder="Driver Image">
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        <hr>
+                        <div class="row">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <label for="driverName">Driver Name</label>
+                            <input type="text" id="driverName" name="driverName" class="form-control"
+                                   placeholder="DriverN Name">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <label for="driverContactNO">Driver Contact No</label>
+                            <input type="text" id="driverContactNO" name="driverContactNO" class="form-control"
+                                   placeholder="Contact No">
+                        </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <label for="driverNicNo">Driver Nice</label>
+                                <input type="text" id="driverNicNo" name="driverNicNo" class="form-control"
+                                       placeholder="Contact No">
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <label for="driverRemarks">Driver Remarks</label>
+                                <input type="text" id="driverRemarks" name="driverRemarks" class="form-control"
+                                       placeholder="Contact No">
+                            </div>
+
+
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <h3>NicFront</h3>
+                                <div class="img-g">
+                                    <img src="" alt="" id="licenseImageFrontShow" > <br><br>
+                                    <input type="file" id="licenseImageFront" name="licenseImageFront" class="form-control"
+                                           placeholder="Driver Image">
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <h3>NicRear</h3>
+                                <div class="img-g">
+                                    <img src="" alt="" id="licenseImageRearShow"> <br><br>
+                                    <input type="file" id="licenseImageRear" name="licenseImageRear" class="form-control"
+                                           placeholder="Driver Image">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <input onkeyup="loadTable()" type="search" name="search"  placeholder="Search"
+                                   class="form-control">
+                        </div>
+                        <div class="col-3">
+                            <button type="button" id="btnSaveVehicle" class="btn btn-primary">Save User</button>
+                        </div>
+                        <div class="col-3">
+                            <button type="button" id="btnClearVehicle" class="btn btn-secondary ">Clear Details</button>
+                        </div>
+                        <div class="col-3">
+                            <button type="button" id="btnUpdateVehicle" class="btn btn-success">User Update</button>
+                        </div>
+                        <div class="col-3">
+                            <button type="button" id="btnDeleteVehicle" class="btn btn-danger">User Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <hr>
+        </div>
+    </section>
+    <!--vehicle section-->
+
+
 </main>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -272,6 +492,7 @@
 <script type="module" src="assets/script/controller/dashboard.js"></script>
 <script type="module" src="assets/script/controller/user_controller.js"></script>
 <script type="module" src="assets/script/model/user.js"></script>
+<script type="module" src="assets/script/controller/vehicle_controller.js"></script>
 <script>
     console.log(
         $('#dashboard-form').hide(),
@@ -326,6 +547,41 @@
             });
         });
     });
+
+
+
+    $("#licenseImageRear").each(function() {
+        let o = this;
+        console.log(o);
+        $(o).on('change', function() {
+            let file = this.files[0];
+            if (file) {
+                let reader = new FileReader();
+                reader.onload = function(e) {
+                    console.log(($(o)).parent().parent())
+                    $(o).parent().parent().find('img').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    });
+
+    $("#licenseImageFront").each(function() {
+        let o = this;
+        console.log(o);
+        $(o).on('change', function() {
+            let file = this.files[0];
+            if (file) {
+                let reader = new FileReader();
+                reader.onload = function(e) {
+                    console.log(($(o)).parent().parent())
+                    $(o).parent().parent().find('img').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    });
+
 
 
 
