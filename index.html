@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/user.css">
     <link rel="stylesheet" href="assets/css/vehicle.css">
     <link rel="stylesheet" href="assets/css/guide.css">
+    <link rel="stylesheet" href="assets/css/hotel.css">
 </head>
 <body>
 
@@ -629,6 +630,184 @@
     <!--    guide section-->
 
 
+<!--    hotel  section-->
+    <section id="hotel-form" class="hotel-section">
+        <header class="user-header">
+            <div id="hotel-inner-user" class="header-inner"><h2>Next Travel Pvt. Ltd</h2></div>
+        </header>
+
+        <div class="user-inner-outer">
+            <div class="user-h2">
+                <h2 style="text-align: center"><i class="fa-solid fa-user"></i>Hotel Management</h2>
+            </div>
+        </div>
+
+        <form action="">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <label for="hotelId">Hotel Id</label>
+                        <input type="text" id="hotelId" name="hotelId" class="form-control"
+                               placeholder="Brand">
+                    </div>
+
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <label for="hotelName">Hotel Name</label>
+                        <input type="text" id="hotelName" name="guideName" class="form-control"
+                               placeholder="Brand">
+                    </div>
+
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <label for="hotelStarRate">Hotel Star</label>
+                        <select name="hotelStarRate" id="hotelStarRate" class="form-control">
+                            <option value="Star-0">Star Rate</option>
+                            <option value="Star-2">Star-2</option>
+                            <option value="Star-3">Star-3</option>
+                            <option value="Star-4">Star-4</option>
+                            <option value="Star-5">Star-5</option>
+
+                        </select>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <label for="petAllowed">Pet Allowed</label>
+                        <select name="petAllowed" id="petAllowed" class="form-control">
+                            <option value="Star-0">Pet Allowed</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+
+
+                        </select>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <label for="hotelLocation">Hotel Location</label>
+                        <input type="number" id="hotelLocation" name="hotelLocation" class="form-control"
+                               placeholder="Brand">
+                    </div>
+
+
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <label for="hotelMobile1">Mobile No - 1</label>
+                        <input type="text" id="hotelMobile1" name="hotelMobile1" class="form-control"
+                               placeholder="Fuel usage(Km/l)">
+                    </div>
+
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <label for="hotelMobile2">Mobile No - 2</label>
+                        <input type="text" id="hotelMobile2" name="hotelMobile2" class="form-control"
+                               placeholder="Fuel usage(Km/l)">
+                    </div>
+
+
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <label for="hotelMail">Hotel Email</label>
+                        <input type="text" id="hotelMail" name="hotelMail" class="form-control"
+                               placeholder="DriverN Name">
+                    </div>
+
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <label for="type1">Full Board With AC Luxury Room Double</label>
+                        <input type="number" id="type1" name="type1" class="form-control"
+                               placeholder="DriverN Name">
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <label for="type2">Half Board With AC Luxury Room Double</label>
+                        <input type="number" id="type2" name="type2" class="form-control"
+                               placeholder="DriverN Name">
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <label for="type3">Full Board With AC Luxury Room Triple</label>
+                        <input type="number" id="type3" name="type3" class="form-control"
+                               placeholder="DriverN Name">
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <label for="type4">Half Board With AC Luxury Room Triple"</label>
+                        <input type="number" id="type4" name="type4" class="form-control"
+                               placeholder="DriverN Name">
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <h3>GuideIdFront</h3>
+                            <div class="img-g">
+                                <img src="" alt="" id="hotelImage1View"> <br><br>
+                                <input type="file" id="hotelImage1" name="hotelImage1" class="form-control"
+                                       placeholder="Driver Image">
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <h3>GuideIdRear</h3>
+                            <div class="img-g">
+                                <img src="" alt="" id="hotelImage2View"> <br><br>
+                                <input type="file" id="hotelImage2" name="hotelImage2" class="form-control"
+                                       placeholder="Driver Image">
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <h3>GuideIdRear</h3>
+                            <div class="img-g">
+                                <img src="" alt="" id="hotelImage3View"> <br><br>
+                                <input type="file" id="hotelImage3" name="hotelImage3" class="form-control"
+                                       placeholder="Driver Image">
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <h3>GuideIdRear</h3>
+                            <div class="img-g">
+                                <img src="" alt="" id="hotelImage4View"> <br><br>
+                                <input type="file" id="hotelImage4" name="hotelImage4" class="form-control"
+                                       placeholder="Driver Image">
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <input type="search" name="GuideSearch" id="hotelSearch" placeholder="Search"
+                               class="form-control">
+                    </div>
+                    <div class="col-3">
+                        <button type="button" id="btnSaveHotel" class="btn btn-primary">Save User</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" id="btnClearHotel" class="btn btn-secondary ">Clear Details</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" id="btnUpdateHotel" class="btn btn-success">User Update</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" id="btnDeleteHotel" class="btn btn-danger">User Delete</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+
+    </section>
+<!--    hotel  section-->
+
+
 </main>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -872,6 +1051,69 @@
         });
     });
 
+    $("#hotelImage1").each(function () {
+        let o = this;
+        console.log(o);
+        $(o).on('change', function () {
+            let file = this.files[0];
+            if (file) {
+                let reader = new FileReader();
+                reader.onload = function (e) {
+                    console.log(($(o)).parent().parent())
+                    $(o).parent().parent().find('img').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    });
+
+    $("#hotelImage2").each(function () {
+        let o = this;
+        console.log(o);
+        $(o).on('change', function () {
+            let file = this.files[0];
+            if (file) {
+                let reader = new FileReader();
+                reader.onload = function (e) {
+                    console.log(($(o)).parent().parent())
+                    $(o).parent().parent().find('img').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    });
+
+    $("#hotelImage3").each(function () {
+        let o = this;
+        console.log(o);
+        $(o).on('change', function () {
+            let file = this.files[0];
+            if (file) {
+                let reader = new FileReader();
+                reader.onload = function (e) {
+                    console.log(($(o)).parent().parent())
+                    $(o).parent().parent().find('img').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    });
+
+    $("#hotelImage4").each(function () {
+        let o = this;
+        console.log(o);
+        $(o).on('change', function () {
+            let file = this.files[0];
+            if (file) {
+                let reader = new FileReader();
+                reader.onload = function (e) {
+                    console.log(($(o)).parent().parent())
+                    $(o).parent().parent().find('img').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    });
 
 
 
