@@ -225,7 +225,7 @@ export class UserController {
         $("#profilePic-img-show").attr('src', '');
         $("#nicRear-img-show").attr('src', '');
         $("#nicFront-img-show").attr('src', '');
-        $("#user_email").prop('readonly', false);
+        // $("#user_email").prop('readonly', false);
     }
 }
 

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/user.css">
     <link rel="stylesheet" href="assets/css/vehicle.css">
+    <link rel="stylesheet" href="assets/css/guide.css">
 </head>
 <body>
 
@@ -41,7 +42,8 @@
                                    style="background-color: transparent;color: white">
                         </div>
                         <div class="col-12 login-col" style="margin-bottom: 5px!important;">
-                            <input type="password" placeholder="Password" id="txtPassword" class="form-control input-login"
+                            <input type="password" placeholder="Password" id="txtPassword"
+                                   class="form-control input-login"
                                    style="background-color: transparent;color: white">
                         </div>
 
@@ -67,10 +69,11 @@
             <a href="#" class="icon-a"><i class="fa fa-dashboard icons"></i> Dashboard</a>
             <a href="#" id="userLink" class="icon-a"><i class="fa fa-dashboard icons"></i> User</a>
             <a href="#" id="vehicleLink" class="icon-a"><i class="fa fa-users icons"></i> Vehicle</a>
+            <a href="" ,class="icon-a"><i class="fa fa-tasks icons"></i>Guide</a>
+
 
             <a href="#" class="icon-a"><i class="fa fa-list icons"></i> Hotel</a>
             <a href="#" class="icon-a"><i class="fa fa-shopping-bag icons"></i> Booking</a>
-            <a href="guide.html" ,class="icon-a"><i class="fa fa-tasks icons"></i>Guide</a>
             <a href="#" class="icon-a"><i class="fa fa-user icons"></i> Travel Package</a>
             <a href="#" class="icon-a"><i class="fa fa-list-alt icons"></i> Income</a>
 
@@ -194,15 +197,15 @@
 
                             </div>
 
-                           <!-- <label for="profilePic">Profile Image</label>
-                            <input type="file" id="profilePic" name="profilePic" class="form-control"
-                                   placeholder="Driver Image">-->
+                            <!-- <label for="profilePic">Profile Image</label>
+                             <input type="file" id="profilePic" name="profilePic" class="form-control"
+                                    placeholder="Driver Image">-->
                         </div>
 
                         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                             <h3>NicFront</h3>
                             <div class="img-g">
-                                <img src="" alt="" id="nicFront-img-show" > <br><br>
+                                <img src="" alt="" id="nicFront-img-show"> <br><br>
                                 <input type="file" id="nicFront" name="nicFront" class="form-control"
                                        placeholder="Driver Image">
                             </div>
@@ -219,9 +222,9 @@
                                 <input type="file" id="nicRear" name="nicRear" class="form-control"
                                        placeholder="Driver Image">
                             </div>
-                           <!-- <label for="nicRear">Nic Rear</label>
-                            <input type="file" id="nicRear" name="nicRear" class="form-control"
-                                   placeholder="Driver Image">-->
+                            <!-- <label for="nicRear">Nic Rear</label>
+                             <input type="file" id="nicRear" name="nicRear" class="form-control"
+                                    placeholder="Driver Image">-->
                         </div>
 
 
@@ -230,7 +233,7 @@
 
                     <div class="row">
                         <div class="col-12">
-                            <input  type="search" name="search" id="search" placeholder="Search"
+                            <input type="search" name="search" id="search" placeholder="Search"
                                    class="form-control">
                         </div>
                         <div class="col-3">
@@ -308,7 +311,6 @@
                         </div>
 
 
-
                         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                             <label for="priceFor1Km">PriceFor1Km</label>
                             <input type="number" id="priceFor1Km" name="priceFor1Km" class="form-control"
@@ -326,7 +328,7 @@
                             <label for="fuelUsage">Fuel usage(Km/l)</label>
                             <input type="text" id="fuelUsage" name="fuelUsage" class="form-control"
                                    placeholder="Fuel usage(Km/l)">
-                  </div>
+                        </div>
 
                         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                             <label for="noOfSeats">NoOfSeats</label>
@@ -366,61 +368,63 @@
                         </div>
 
 
+                        <div class="row">
 
 
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <h3>NicFront</h3>
-                            <div class="img-g">
-                                <img src="" alt="" id="vehicle_front_view_img" > <br><br>
-                                <input type="file" id="vehicle_front_view" name="vehicle_front_view" class="form-control"
-                                       placeholder="Driver Image">
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <h3>NicFront</h3>
+                                <div class="img-g">
+                                    <img src="" alt="" id="vehicle_front_view_img"> <br><br>
+                                    <input type="file" id="vehicle_front_view" name="vehicle_front_view"
+                                           class="form-control"
+                                           placeholder="Driver Image">
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <h3>NicFront</h3>
+                                <div class="img-g">
+                                    <img src="" alt="" id="vehicle_rear_view_img"> <br><br>
+                                    <input type="file" id="vehicle_rear_view" name="vehicle_rear_view"
+                                           class="form-control"
+                                           placeholder="Driver Image">
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <h3>NicFront</h3>
+                                <div class="img-g">
+                                    <img src="" alt="" id="vehicle_side_view_img"> <br><br>
+                                    <input type="file" id="vehicle_side_view" name="vehicle_side_view"
+                                           class="form-control"
+                                           placeholder="Driver Image">
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <h3>NicFront</h3>
+                                <div class="img-g">
+                                    <img src="" alt="" id="vehicle_front_interior_img"> <br><br>
+                                    <input type="file" id="vehicle_front_interior" name="vehicle_front_interior"
+                                           class="form-control"
+                                           placeholder="Driver Image">
+                                </div>
                             </div>
                         </div>
-
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <h3>NicFront</h3>
-                            <div class="img-g">
-                                <img src="" alt="" id="vehicle_rear_view_img" > <br><br>
-                                <input type="file" id="vehicle_rear_view" name="vehicle_rear_view" class="form-control"
-                                       placeholder="Driver Image">
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <h3>NicFront</h3>
-                            <div class="img-g">
-                                <img src="" alt="" id="vehicle_side_view_img" > <br><br>
-                                <input type="file" id="vehicle_side_view" name="licenseImageFront" class="form-control"
-                                       placeholder="Driver Image">
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <h3>NicFront</h3>
-                            <div class="img-g">
-                                <img src="" alt="" id="vehicle_front_interior_img" > <br><br>
-                                <input type="file" id="vehicle_front_interior" name="licenseImageFront" class="form-control"
-                                       placeholder="Driver Image">
-                            </div>
-                        </div>
-
-
-
-
 
 
                         <hr>
                         <div class="row">
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <label for="driverName">Driver Name</label>
-                            <input type="text" id="driverName" name="driverName" class="form-control"
-                                   placeholder="DriverN Name">
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <label for="driverContactNO">Driver Contact No</label>
-                            <input type="text" id="driverContactNO" name="driverContactNO" class="form-control"
-                                   placeholder="Contact No">
-                        </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <label for="driverName">Driver Name</label>
+                                <input type="text" id="driverName" name="driverName" class="form-control"
+                                       placeholder="DriverN Name">
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <label for="driverContactNO">Driver Contact No</label>
+                                <input type="text" id="driverContactNO" name="driverContactNO" class="form-control"
+                                       placeholder="Contact No">
+                            </div>
                             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                                 <label for="driverNicNo">Driver Nice</label>
                                 <input type="text" id="driverNicNo" name="driverNicNo" class="form-control"
@@ -437,8 +441,9 @@
                             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                                 <h3>NicFront</h3>
                                 <div class="img-g">
-                                    <img src="" alt="" id="licenseImageFrontShow" > <br><br>
-                                    <input type="file" id="licenseImageFront" name="licenseImageFront" class="form-control"
+                                    <img src="" alt="" id="licenseImageFrontShow"> <br><br>
+                                    <input type="file" id="licenseImageFront" name="licenseImageFront"
+                                           class="form-control"
                                            placeholder="Driver Image">
                                 </div>
                             </div>
@@ -447,18 +452,18 @@
                                 <h3>NicRear</h3>
                                 <div class="img-g">
                                     <img src="" alt="" id="licenseImageRearShow"> <br><br>
-                                    <input type="file" id="licenseImageRear" name="licenseImageRear" class="form-control"
+                                    <input type="file" id="licenseImageRear" name="licenseImageRear"
+                                           class="form-control"
                                            placeholder="Driver Image">
                                 </div>
                             </div>
-
                         </div>
 
                     </div>
 
                     <div class="row">
                         <div class="col-12">
-                            <input onkeyup="loadTable()" type="search" name="search"  placeholder="Search"
+                            <input type="search" name="vehicleSearch" id="vehicleSearch" placeholder="Search"
                                    class="form-control">
                         </div>
                         <div class="col-3">
@@ -483,32 +488,173 @@
     <!--vehicle section-->
 
 
+    <!--    guide section-->
+    <section id="guide-form" class="guide-section">
+        <header class="user-header">
+            <div id="guide-inner-user" class="header-inner"><h2>Next Travel Pvt. Ltd</h2></div>
+        </header>
+
+        <div class="user-inner-outer">
+            <div class="user-h2">
+                <h2 style="text-align: center"><i class="fa-solid fa-user"></i>Guide Management</h2>
+            </div>
+        </div>
+
+        <form action="">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <label for="guideId">Guide Id</label>
+                        <input type="text" id="guideId" name="guideId" class="form-control"
+                               placeholder="Brand">
+                    </div>
+
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <label for="guideName">Guide Name</label>
+                        <input type="text" id="guideName" name="guideName" class="form-control"
+                               placeholder="Brand">
+                    </div>
+
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <label for="guideAddress">GuideAddress</label>
+                        <input type="text" id="guideAddress" name="guideAddress" class="form-control"
+                               placeholder="Brand">
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <label for="guideContact">GuideContact</label>
+                        <input type="number" id="guideContact" name="guideContact" class="form-control"
+                               placeholder="Brand">
+                    </div>
+
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <label for="guideBirthDate">Guide BirthDate</label>
+                        <input type="text" id="guideBirthDate" name="guideBirthDate" class="form-control"
+                               placeholder="Fuel usage(Km/l)">
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <label for="guideManDayValue">Guide ManDay Value</label>
+                        <input type="number" id="guideManDayValue" name="guideManDayValue" class="form-control"
+                               placeholder="Seat Capacity">
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <label for="guideExperience">GuideExperience</label>
+                        <input type="text" id="guideExperience" name="driverName" class="form-control"
+                               placeholder="DriverN Name">
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <h3>GuideIdFront</h3>
+                            <div class="img-g">
+                                <img src="" alt="" id="guideIdFrontImg"> <br><br>
+                                <input type="file" id="guideIdFront" name="guideIdFront" class="form-control"
+                                       placeholder="Driver Image">
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <h3>GuideIdRear</h3>
+                            <div class="img-g">
+                                <img src="" alt="" id="guideIdRearImg"> <br><br>
+                                <input type="file" id="guideIdRear" name="guideIdRear" class="form-control"
+                                       placeholder="Driver Image">
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <h3>GuideIdRear</h3>
+                            <div class="img-g">
+                                <img src="" alt="" id="guideNicFrontImg"> <br><br>
+                                <input type="file" id="guideNicFront" name="guideNicFront" class="form-control"
+                                       placeholder="Driver Image">
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <h3>GuideIdRear</h3>
+                            <div class="img-g">
+                                <img src="" alt="" id="guideNicRearImg"> <br><br>
+                                <input type="file" id="guideNicRear" name="guideNicRear" class="form-control"
+                                       placeholder="Driver Image">
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <h3>GuideIdRear</h3>
+                            <div class="img-g">
+                                <img src="" alt="" id="guideProfilePicImg"> <br><br>
+                                <input type="file" id="guideProfilePic" name="guideProfilePic" class="form-control"
+                                       placeholder="Driver Image">
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <input type="search" name="GuideSearch" id="GuideSearch" placeholder="Search"
+                               class="form-control">
+                    </div>
+                    <div class="col-3">
+                        <button type="button" id="btnSaveGuide" class="btn btn-primary">Save User</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" id="btnClearGuide" class="btn btn-secondary ">Clear Details</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" id="btnUpdateGuide" class="btn btn-success">User Update</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" id="btnDeleteGuide" class="btn btn-danger">User Delete</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+
+    </section>
+    <!--    guide section-->
+
+
 </main>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script  src="https://kit.fontawesome.com/ac306f23ee.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/ac306f23ee.js" crossorigin="anonymous"></script>
 <script type="module" src="assets/script/db/db.js"></script>
 <script type="module" src="assets/script/controller/login.js"></script>
 <script type="module" src="assets/script/controller/dashboard.js"></script>
 <script type="module" src="assets/script/controller/user_controller.js"></script>
 <script type="module" src="assets/script/model/user.js"></script>
 <script type="module" src="assets/script/controller/vehicle_controller.js"></script>
+<script type="module" src="assets/script/controller/guide_controller.js"></script>
 <script>
     console.log(
         $('#dashboard-form').hide(),
-         $('#user-form').hide(),
-
+        $('#user-form').hide(),
     )
 
-    $(document).ready(function() {
-        $("#profilePic").each(function() {
+    $(document).ready(function () {
+        $("#profilePic").each(function () {
             let o = this;
             console.log(o);
-            $(o).on('change', function() {
+            $(o).on('change', function () {
                 let file = this.files[0];
                 if (file) {
                     let reader = new FileReader();
-                    reader.onload = function(e) {
+                    reader.onload = function (e) {
                         console.log(($(o)).parent().parent())
                         $(o).parent().parent().find('img').attr('src', e.target.result);
                     }
@@ -516,14 +662,14 @@
                 }
             });
         });
-        $("#nicRear").each(function() {
+        $("#nicRear").each(function () {
             let o = this;
             console.log(o);
-            $(o).on('change', function() {
+            $(o).on('change', function () {
                 let file = this.files[0];
                 if (file) {
                     let reader = new FileReader();
-                    reader.onload = function(e) {
+                    reader.onload = function (e) {
                         console.log(($(o)).parent().parent())
                         $(o).parent().parent().find('img').attr('src', e.target.result);
                     }
@@ -531,14 +677,14 @@
                 }
             });
         });
-        $("#nicFront").each(function() {
+        $("#nicFront").each(function () {
             let o = this;
             console.log(o);
-            $(o).on('change', function() {
+            $(o).on('change', function () {
                 let file = this.files[0];
                 if (file) {
                     let reader = new FileReader();
-                    reader.onload = function(e) {
+                    reader.onload = function (e) {
                         console.log(($(o)).parent().parent())
                         $(o).parent().parent().find('img').attr('src', e.target.result);
                     }
@@ -549,15 +695,14 @@
     });
 
 
-
-    $("#licenseImageRear").each(function() {
+    $("#vehicle_front_view").each(function () {
         let o = this;
         console.log(o);
-        $(o).on('change', function() {
+        $(o).on('change', function () {
             let file = this.files[0];
             if (file) {
                 let reader = new FileReader();
-                reader.onload = function(e) {
+                reader.onload = function (e) {
                     console.log(($(o)).parent().parent())
                     $(o).parent().parent().find('img').attr('src', e.target.result);
                 }
@@ -566,14 +711,46 @@
         });
     });
 
-    $("#licenseImageFront").each(function() {
+    $("#vehicle_rear_view").each(function () {
         let o = this;
         console.log(o);
-        $(o).on('change', function() {
+        $(o).on('change', function () {
             let file = this.files[0];
             if (file) {
                 let reader = new FileReader();
-                reader.onload = function(e) {
+                reader.onload = function (e) {
+                    console.log(($(o)).parent().parent())
+                    $(o).parent().parent().find('img').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    });
+
+    $("#vehicle_side_view").each(function () {
+        let o = this;
+        console.log(o);
+        $(o).on('change', function () {
+            let file = this.files[0];
+            if (file) {
+                let reader = new FileReader();
+                reader.onload = function (e) {
+                    console.log(($(o)).parent().parent())
+                    $(o).parent().parent().find('img').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    });
+
+    $("#vehicle_front_interior").each(function () {
+        let o = this;
+        console.log(o);
+        $(o).on('change', function () {
+            let file = this.files[0];
+            if (file) {
+                let reader = new FileReader();
+                reader.onload = function (e) {
                     console.log(($(o)).parent().parent())
                     $(o).parent().parent().find('img').attr('src', e.target.result);
                 }
@@ -583,7 +760,117 @@
     });
 
 
+    $("#licenseImageRear").each(function () {
+        let o = this;
+        console.log(o);
+        $(o).on('change', function () {
+            let file = this.files[0];
+            if (file) {
+                let reader = new FileReader();
+                reader.onload = function (e) {
+                    console.log(($(o)).parent().parent())
+                    $(o).parent().parent().find('img').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    });
 
+    $("#licenseImageFront").each(function () {
+        let o = this;
+        console.log(o);
+        $(o).on('change', function () {
+            let file = this.files[0];
+            if (file) {
+                let reader = new FileReader();
+                reader.onload = function (e) {
+                    console.log(($(o)).parent().parent())
+                    $(o).parent().parent().find('img').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    });
+
+    $("#guideProfilePic").each(function () {
+        let o = this;
+        console.log(o);
+        $(o).on('change', function () {
+            let file = this.files[0];
+            if (file) {
+                let reader = new FileReader();
+                reader.onload = function (e) {
+                    console.log(($(o)).parent().parent())
+                    $(o).parent().parent().find('img').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    });
+
+    $("#guideIdFront").each(function () {
+        let o = this;
+        console.log(o);
+        $(o).on('change', function () {
+            let file = this.files[0];
+            if (file) {
+                let reader = new FileReader();
+                reader.onload = function (e) {
+                    console.log(($(o)).parent().parent())
+                    $(o).parent().parent().find('img').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    });
+
+    $("#guideIdRear").each(function () {
+        let o = this;
+        console.log(o);
+        $(o).on('change', function () {
+            let file = this.files[0];
+            if (file) {
+                let reader = new FileReader();
+                reader.onload = function (e) {
+                    console.log(($(o)).parent().parent())
+                    $(o).parent().parent().find('img').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    });
+
+
+    $("#guideNicFront").each(function () {
+        let o = this;
+        console.log(o);
+        $(o).on('change', function () {
+            let file = this.files[0];
+            if (file) {
+                let reader = new FileReader();
+                reader.onload = function (e) {
+                    console.log(($(o)).parent().parent())
+                    $(o).parent().parent().find('img').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    });
+    $("#guideNicRear").each(function () {
+        let o = this;
+        console.log(o);
+        $(o).on('change', function () {
+            let file = this.files[0];
+            if (file) {
+                let reader = new FileReader();
+                reader.onload = function (e) {
+                    console.log(($(o)).parent().parent())
+                    $(o).parent().parent().find('img').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    });
 
 
 
