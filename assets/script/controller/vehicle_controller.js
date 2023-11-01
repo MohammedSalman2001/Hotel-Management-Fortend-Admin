@@ -18,6 +18,52 @@ export class VehicleController{
 
         });
 
+        $('#btnClearVehicle').click(e=>{
+            this.clearFormVehicle()
+        })
+
+    }
+    clearFormVehicle() {
+        // Set vehicle information
+        $("#vehicleId").val("");
+        $("#vehicleName").val("");
+        $("#fuelType").val("");
+        $("#isHybrid").val("")
+        $("#priceFor1Km").val("");
+        $("#priceFor100Km").val("");
+        $("#fuelUsage").val("");
+        $("#noOfSeats").val("");
+        $("#vehicleType").val("");
+        $("#category").val("");
+        $('#transmission').val("")
+
+
+
+        // Assuming these fields are for the driver information
+        $("#driverName").val("");
+        $("#driverContactNO").val("");
+        $("#driverNicNo").val("");
+        $("#driverId").val("");
+        $('#driverRemarks').val("")
+
+        // Assuming these fields are for driver license images
+        // Assuming 'licenseImageFront' and 'licenseImageRear' are byte arrays in vehicleDTO
+        // You'll need to handle these separately, possibly using FileReader to display images
+        // Assuming 'vehicleDTO' is the response from your Spring Boot API
+
+        // Display vehicle images
+        $('#vehicle_front_view_img').attr('src', ``);
+        $('#vehicle_rear_view_img').attr('src', ``);
+        $('#vehicle_side_view_img').attr('src', ``);
+        $('#vehicle_front_interior_img').attr('src', ``);
+        $('#vehicle_rear_interior_img').attr('src', ``);
+
+        // Display driver license images
+        $('#licenseImageFrontShow').attr('src', ``);
+        $('#licenseImageRearShow').attr('src', ``);
+
+
+
     }
 
     searchVehicle(vehicle){
@@ -37,39 +83,26 @@ export class VehicleController{
             // Assuming 'vehicleDTO' is the response from your Spring Boot API
 
             // Set vehicle information
-          /*  $("#vehicle_id").val(vehicleDTO.id);
-            $("#vehicle_name").val(vehicleDTO.name);
-            $("#vehicle_type").val(vehicleDTO.vehicleType);
-            $("#vehicle_price_for_1km").val(vehicleDTO.priceFor1Km);
-            $("#vehicle_price_for_100km").val(vehicleDTO.priceFor100Km);
-            $("#vehicle_seat_capacity").val(vehicleDTO.seatCapacity);
-            $("#vehicle_fuel_usage").val(vehicleDTO.fuelUsage);
-            $("#vehicle_category").val(vehicleDTO.category);
+            $("#vehicleId").val(vehicleDTO.id);
+            $("#vehicleName").val(vehicleDTO.vehicleName);
+            $("#fuelType").val(vehicleDTO.fuelType);
+            $("#isHybrid").val(vehicleDTO.hybrid)
+            $("#priceFor1Km").val(vehicleDTO.priceFor1Km);
+            $("#priceFor100Km").val(vehicleDTO.priceFor100Km);
+            $("#fuelUsage").val(vehicleDTO.fuelUsage);
+            $("#noOfSeats").val(vehicleDTO.seatCapacity);
+            $("#vehicleType").val(vehicleDTO.vehicleType);
+            $("#category").val(vehicleDTO.category);
+            $('#transmission').val(vehicleDTO.transmission)
 
-            // Set radio buttons and checkboxes
-            if (vehicleDTO.fuelType === "DIESEL") {
-                $("#vehicle_fuel_type").prop("checked", false);
-            } else {
-                $("#vehicle_fuel_type").prop("checked", true);
-            }
 
-            if (vehicleDTO.hybrid) {
-                $("#vehicle_is_hybrid").prop("checked", true);
-            }else {
-                $("#vehicle_is_hybrid").prop("checked", false);
-            }
-
-            if (vehicleDTO.transmission === "AUTO") {
-                $("#vehicle_is_transmission_manual").prop("checked", true);
-            } else {
-                $("#vehicle_is_transmission_manual").prop("checked", false);
-            }
 
             // Assuming these fields are for the driver information
-            $("#driver_name").val(vehicleDTO.driverDTO.name);
-            $("#driver_contact").val(vehicleDTO.driverDTO.contact);
-            $("#driver_nic").val(vehicleDTO.driverDTO.nic);
-            $("#driver_id").val(vehicleDTO.driverDTO.id);
+            $("#driverName").val(vehicleDTO.driverDTO.driverName);
+            $("#driverContactNO").val(vehicleDTO.driverDTO.driverContact);
+            $("#driverNicNo").val(vehicleDTO.driverDTO.driverNic);
+            $("#driverId").val(vehicleDTO.driverDTO.id);
+            $('#driverRemarks').val(vehicleDTO.driverDTO.driverRemarks)
 
             // Assuming these fields are for driver license images
             // Assuming 'licenseImageFront' and 'licenseImageRear' are byte arrays in vehicleDTO
@@ -84,9 +117,9 @@ export class VehicleController{
             $('#vehicle_rear_interior_img').attr('src', `data:image/jpg;base64,${vehicleDTO.images[4]}`);
 
             // Display driver license images
-            $('#driver_license_front_img').attr('src', `data:image/jpg;base64,${vehicleDTO.driverDTO.licenseImageFront}`);
-            $('#driver_licence_rear_img').attr('src', `data:image/jpg;base64,${vehicleDTO.driverDTO.licenseImageRear}`);
-*/
+            $('#licenseImageFrontShow').attr('src', `data:image/jpg;base64,${vehicleDTO.driverDTO.licenseImageFront}`);
+            $('#licenseImageRearShow').attr('src', `data:image/jpg;base64,${vehicleDTO.driverDTO.licenseImageRear}`);
+
 
         });
     }
@@ -186,11 +219,22 @@ export class VehicleController{
 
         $.ajax(settings).done(function (response) {
             console.log(response);
+            $('#btnClearVehicle').trigger('click');
         });
     }
 
 
-
+    dataURLtoFile(dataurl, filename) {
+        var arr = dataurl.split(','),
+            mime = arr[0].match(/:(.*?);/)[1],
+            bstr = atob(arr[arr.length - 1]),
+            n = bstr.length,
+            u8arr = new Uint8Array(n);
+        while(n--){
+            u8arr[n] = bstr.charCodeAt(n);
+        }
+        return new File([u8arr], filename, {type:mime});
+    }
 
 
 }

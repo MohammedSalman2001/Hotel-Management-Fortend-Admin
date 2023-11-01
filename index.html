@@ -256,7 +256,7 @@
             </form>
             <hr>
 
-            <div class="table-outer" style="height: 400px;overflow: auto;margin-left: 100px!important;">
+        <!--    <div class="table-outer" style="height: 400px;overflow: auto;margin-left: 100px!important;">
                 <table class="table table-hover">
                     <thead>
                     <tr>
@@ -265,13 +265,13 @@
                         <th>Email</th>
                         <th>Password</th>
                         <th>ContactNo</th>
-                        <th>Nic No</th>
+                        <th>NicNo</th>
                         <th>Address</th>
                         <th>Birthday</th>
                         <th>Gender</th>
                         <th>Profile</th>
-                        <th>Nic Front</th>
-                        <th>Nic Rear</th>
+                        <th>NicFront</th>
+                        <th>NicRear</th>
                     </tr>
 
                     </thead>
@@ -282,7 +282,7 @@
             </div>
 
 
-
+-->
 
         </div>
     </section>
@@ -307,6 +307,11 @@
                 <div class="container">
                     <div class="row">
 
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <label for="vehicleId">Vehicle Id</label>
+                            <input type="text" id="vehicleId" name="vehicleId" class="form-control"
+                                   placeholder="Vehicle Id" disabled>
+                        </div>
                         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                             <label for="vehicleName">Vehicle Name</label>
                             <input type="text" id="vehicleName" name="vehicleName" class="form-control"
@@ -438,6 +443,11 @@
                         <hr>
                         <div class="row">
                             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <label for="driverId">Driver Id</label>
+                                <input type="text" id="driverId" name="driverId" class="form-control"
+                                       placeholder="Driver Id" disabled>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                                 <label for="driverName">Driver Name</label>
                                 <input type="text" id="driverName" name="driverName" class="form-control"
                                        placeholder="DriverN Name">
@@ -458,29 +468,29 @@
                                 <input type="text" id="driverRemarks" name="driverRemarks" class="form-control"
                                        placeholder="Contact No">
                             </div>
+                        </div>
+                    </div>
 
-
-                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                                <h3>NicFront</h3>
-                                <div class="img-g">
-                                    <img src="" alt="" id="licenseImageFrontShow"> <br><br>
-                                    <input type="file" id="licenseImageFront" name="licenseImageFront"
-                                           class="form-control"
-                                           placeholder="Driver Image">
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                                <h3>NicRear</h3>
-                                <div class="img-g">
-                                    <img src="" alt="" id="licenseImageRearShow"> <br><br>
-                                    <input type="file" id="licenseImageRear" name="licenseImageRear"
-                                           class="form-control"
-                                           placeholder="Driver Image">
-                                </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <h3>NicFront</h3>
+                            <div class="img-g">
+                                <img src="" alt="" id="licenseImageFrontShow"> <br><br>
+                                <input type="file" id="licenseImageFront" name="licenseImageFront"
+                                       class="form-control"
+                                       placeholder="Driver Image">
                             </div>
                         </div>
 
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <h3>NicRear</h3>
+                            <div class="img-g">
+                                <img src="" alt="" id="licenseImageRearShow"> <br><br>
+                                <input type="file" id="licenseImageRear" name="licenseImageRear"
+                                       class="form-control"
+                                       placeholder="Driver Image">
+                            </div>
+                        </div>
                     </div>
 
                     <div class="row">

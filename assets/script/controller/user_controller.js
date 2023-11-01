@@ -39,7 +39,52 @@ export class UserController {
 
 
     }
+    clearForm() {
+        $("#userName").val('');
+        $("#password").val('');
+        $("#email").val('');
+        $("#birthday").val('');
+        $("#gender").val('');
+        $('#profilePic').val('');
+        $('#nicFront').val('');
+        $('#nicRear').val('');
+        $("#nicNo").val('');
 
+        // Change the src of the image elements
+        $("#profilePic-img-show").attr('src', '');
+        $("#nicRear-img-show").attr('src', '');
+        $("#nicFront-img-show").attr('src', '');
+        // $("#user_email").prop('readonly', false);
+
+
+    }
+
+    callMethod() {
+        $('#tblCustomerJson>tr').click(function () {
+
+            let id = $(this).children().eq(0).text()
+            let name = $(this).children().eq(1).text()
+            let email = $(this).children().eq(2).text()
+            let password = $(this).children().eq(3).text()
+            let ContactNo = $(this).children().eq(4).text()
+            let NicNo = $(this).children().eq(5).text()
+            let Address = $(this).children().eq(6).text()
+            let Birthday = $(this).children().eq(7).text()
+            let Gender = $(this).children().eq(8).text()
+
+
+            $('#userName').val(responseData.username);
+            $('#nicNo').val(responseData.usernic);
+            $('#contact').val(responseData.contact);
+            $('#email').val(responseData.email);
+            $('#birthday').val(responseData.birthday);
+            $('#password').val(responseData.password)
+            $('#gender').val(responseData.gender);
+            $("#nicNo").val(responseData.usernic);
+
+        })
+
+    }
 
     delete(){
         var settings = {
@@ -236,36 +281,14 @@ export class UserController {
 
         $.ajax(settings).done(function (response) {
             console.log(response);
-            $('#btnClear').trigger('click');
 
+            $('#btnClear').trigger('click');
 
         }).fail(e => {
             console.log(e.code)
         });
 
-
     }
-
-    clearForm() {
-        $("#userName").val('');
-        $("#password").val('');
-        $("#email").val('');
-        $("#birthday").val('');
-        $("#gender").val('');
-        $('#profilePic').val('');
-        $('#nicFront').val('');
-        $('#nicRear').val('');
-        $("#nicNo").val('');
-
-        // Change the src of the image elements
-        $("#profilePic-img-show").attr('src', '');
-        $("#nicRear-img-show").attr('src', '');
-        $("#nicFront-img-show").attr('src', '');
-        // $("#user_email").prop('readonly', false);
-
-
-    }
-
 
 
 
