@@ -23,9 +23,37 @@ export class GuideController{
             this.update();
         });
 
+        $('#btnClearGuide').click(e=>{
+            this.clear()
+        })
+
+        $('#btnDeleteGuide').click(e=>{
+           this .deleteGuide()
+        })
+
 
     }
 
+
+    deleteGuide(){
+        var settings = {
+            "url": "http://localhost:8084/api/v1/guide/"+$("#guideId").val(),
+            "method": "DELETE",
+            "timeout": 0,
+            "headers": {
+                "Authorization": "Bearer "+getKey()
+            },
+            "processData": false,
+            "mimeType": "multipart/form-data",
+            "contentType": false,
+
+        };
+
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+            $('#btnClearGuide').trigger('click');
+        });
+    }
     save(){
         let guideName = $("#guideName").val();
         let guideAddress = $("#guideAddress").val();
@@ -68,6 +96,7 @@ export class GuideController{
 
         $.ajax(settings).done(function (response) {
             console.log(response);
+            $('#btnClearGuide').trigger('click');
         });
 
     }
@@ -160,9 +189,26 @@ export class GuideController{
 
         $.ajax(settings).done(function (response) {
             console.log(response);
+            $('#btnClearGuide').trigger('click');
         });
 
 
+    }
+
+    clear(){
+        $("#guideId").val("");
+        $("#guideName").val("");
+        $("#guideAddress").val("");
+        $("#guideContact").val("");
+        $("#guideBirthDate").val("");
+        $("#guideManDayValue").val("");
+        $("#guideExperience").val("");
+
+        $("#guideProfilePicImg").prop("src","");
+        $("#guideIdFrontImg").prop("src","");
+        $("#guideIdRearImg").prop("src","");
+        $("#guideNicFrontImg").prop("src","");
+        $("#guideNicRearImg").prop("src"," ");
     }
 
     dataURLtoFile(dataurl, filename) {

@@ -15,3 +15,11 @@ $('#vehicleLink').click(function () {
     $('#hotel-form').hide()
     $('#user-form').hide()
 })
+
+$('#guideLink').click(function () {
+    $('#dashboard-form').hide()
+    $('#vehicle-form').hide();
+    $('#guide-form').show()
+    $('#hotel-form').hide()
+    $('#user-form').hide()
+})

@@ -69,8 +69,8 @@
             <p class="logo"><span>N</span>-ext Travel</p>
             <a href="#" class="icon-a"><i class="fa fa-dashboard icons"></i> Dashboard</a>
             <a href="#" id="userLink" class="icon-a"><i class="fa fa-dashboard icons"></i> User</a>
+            <a href="#" id="guideLink" class="icon-a"><i class="fa fa-tasks icons"></i>Guide</a>
             <a href="#" id="vehicleLink" class="icon-a"><i class="fa fa-users icons"></i> Vehicle</a>
-            <a href="" ,class="icon-a"><i class="fa fa-tasks icons"></i>Guide</a>
 
 
             <a href="#" class="icon-a"><i class="fa fa-list icons"></i> Hotel</a>
@@ -399,7 +399,7 @@
 
 
                             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                                <h3>NicFront</h3>
+                                <h3>Front View</h3>
                                 <div class="img-g">
                                     <img src="" alt="" id="vehicle_front_view_img"> <br><br>
                                     <input type="file" id="vehicle_front_view" name="vehicle_front_view"
@@ -409,7 +409,7 @@
                             </div>
 
                             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                                <h3>NicFront</h3>
+                                <h3>Back View</h3>
                                 <div class="img-g">
                                     <img src="" alt="" id="vehicle_rear_view_img"> <br><br>
                                     <input type="file" id="vehicle_rear_view" name="vehicle_rear_view"
@@ -419,7 +419,17 @@
                             </div>
 
                             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                                <h3>NicFront</h3>
+                                <h3>Front Interior</h3>
+                                <div class="img-g">
+                                    <img src="" alt="" id="vehicle_front_interior_img"> <br><br>
+                                    <input type="file" id="vehicle_front_interior_view" name="vehicle_front_interior"
+                                           class="form-control"
+                                           placeholder="Driver Image">
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <h3>Back Interior</h3>
                                 <div class="img-g">
                                     <img src="" alt="" id="vehicle_side_view_img"> <br><br>
                                     <input type="file" id="vehicle_side_view" name="vehicle_side_view"
@@ -428,15 +438,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                                <h3>NicFront</h3>
-                                <div class="img-g">
-                                    <img src="" alt="" id="vehicle_front_interior_img"> <br><br>
-                                    <input type="file" id="vehicle_front_interior" name="vehicle_front_interior"
-                                           class="form-control"
-                                           placeholder="Driver Image">
-                                </div>
-                            </div>
+
                         </div>
 
 
@@ -953,7 +955,7 @@
         });
     });
 
-    $("#vehicle_side_view").each(function () {
+    $("#vehicle_front_interior_view").each(function () {
         let o = this;
         console.log(o);
         $(o).on('change', function () {
@@ -969,7 +971,7 @@
         });
     });
 
-    $("#vehicle_front_interior").each(function () {
+    $("#vehicle_side_view").each(function () {
         let o = this;
         console.log(o);
         $(o).on('change', function () {
@@ -1166,6 +1168,11 @@
 
         $('#dashboard-form').show()
         $('#vehicle-form').hide()
+    })
+
+    $('#guide-inner-user').click(function (){
+        $('#dashboard-form').show()
+        $('#guide-form').hide()
     })
 
 
