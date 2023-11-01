@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1d85c05f-c64c-4db3-aaae-7c4397385905" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/assets/script/controller/hotel_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/script/controller/hotel_controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="2XNpj19M7DCxm38kFWEX9wktMQN" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/script/model" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\OneDrive\Desktop\nextravel\Hotel-Management-Fortend-Admin\assets\script\model" />
+      <recent name="C:\Users\Admin\OneDrive\Desktop\nextravel\Hotel-Management-Fortend-Admin\assets\images\login" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\OneDrive\Desktop\nextravel\Hotel-Management-Fortend-Admin\assets\script\controller" />
+      <recent name="C:\Users\Admin\OneDrive\Desktop\nextravel\Hotel-Management-Fortend-Admin\assets\script" />
+      <recent name="C:\Users\Admin\OneDrive\Desktop\nextravel\Hotel-Management-Fortend-Admin\assets\js" />
+      <recent name="C:\Users\Admin\OneDrive\Desktop\nextravel\Hotel-Management-Fortend-Admin" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1d85c05f-c64c-4db3-aaae-7c4397385905" name="Changes" comment="" />
+      <created>1698479524531</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698479524531</updated>
+      <workItem from="1698479526566" duration="130000" />
+      <workItem from="1698481401025" duration="73000" />
+      <workItem from="1698481737283" duration="4917000" />
+      <workItem from="1698493296620" duration="683000" />
+      <workItem from="1698494741626" duration="103000" />
+      <workItem from="1698494914966" duration="7098000" />
+      <workItem from="1698504754685" duration="2368000" />
+      <workItem from="1698507617300" duration="13391000" />
+      <workItem from="1698566341305" duration="500000" />
+      <workItem from="1698567223136" duration="19182000" />
+      <workItem from="1698597871856" duration="12471000" />
+      <workItem from="1698641426910" duration="1280000" />
+      <workItem from="1698644005897" duration="12125000" />
+      <workItem from="1698667148437" duration="7879000" />
+      <workItem from="1698677551072" duration="4108000" />
+    </task>
+    <task id="LOCAL-00001" summary="create single page">
+      <created>1698559264598</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698559264599</updated>
+    </task>
+    <task id="LOCAL-00002" summary="user save create">
+      <created>1698566849118</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698566849118</updated>
+    </task>
+    <task id="LOCAL-00003" summary="userSearch complete">
+      <created>1698576070210</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698576070212</updated>
+    </task>
+    <task id="LOCAL-00004" summary="some minor change">
+      <created>1698576538526</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698576538528</updated>
+    </task>
+    <task id="LOCAL-00005" summary="userService completed">
+      <created>1698581238849</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1698581238849</updated>
+    </task>
+    <task id="LOCAL-00006" summary="vehicleSave implementation">
+      <created>1698609558154</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1698609558154</updated>
+    </task>
+    <task id="LOCAL-00007" summary="guidePage implication">
+      <created>1698663618887</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1698663618887</updated>
+    </task>
+    <task id="LOCAL-00008" summary="hotel view page">
+      <created>1698670771763</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1698670771764</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create single page" />
+    <MESSAGE value="user save create" />
+    <MESSAGE value="userSearch complete" />
+    <MESSAGE value="some minor change" />
+    <MESSAGE value="userService completed" />
+    <MESSAGE value="vehicleSave implementation" />
+    <MESSAGE value="guidePage implication" />
+    <MESSAGE value="hotel view page" />
+    <option name="LAST_COMMIT_MESSAGE" value="hotel view page" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/assets/script/controller/guide_controller.js</url>
+          <line>101</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
