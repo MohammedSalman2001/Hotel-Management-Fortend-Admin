@@ -40,6 +40,7 @@ export class UserController {
 
     }
 
+
     delete(){
         var settings = {
             "url": "http://localhost:8081/api/v1/user?email="+$('#email').val(),
