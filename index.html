@@ -127,7 +127,9 @@
     <!--user-section-->
     <section id="user-form" class="user-section">
         <header class="user-header">
-            <div id="header-inner-user" class="header-inner"><h2>Next Travel Pvt. Ltd</h2></div>
+            <div id="header-inner-user" class="header-inner">
+                <h2>Next Travel Pvt. Ltd</h2>
+            </div>
         </header>
 
         <div class="user-inner-outer">
@@ -274,7 +276,9 @@
 
     <section id="vehicle-form" class="vehicle-section">
         <header class="user-header">
-            <div id="vehicle-inner-user" class="header-inner"><h2>Next Travel Pvt. Ltd</h2></div>
+            <div id="vehicle-inner-user" class="header-inner">
+                <h2>Next Travel Pvt. Ltd</h2>
+            </div>
         </header>
 
         <div class="user-inner-outer">
@@ -833,7 +837,13 @@
     console.log(
         $('#dashboard-form').hide(),
         $('#user-form').hide(),
+        $('#vehicle-form').hide(),
+    $('#guide-form').hide(),
+    $('#hotel-form').hide()
+
     )
+
+
 
     $(document).ready(function () {
         $("#profilePic").each(function () {
@@ -1125,6 +1135,11 @@
         });
     });
 
+    $('#vehicle-inner-user').click(function (){
+
+        $('#dashboard-form').show()
+        $('#vehicle-form').hide()
+    })
 
 
 </script>

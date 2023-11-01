@@ -23,7 +23,7 @@ export class UserController {
         })
 
         $('#btnDelete').click(e => {
-
+            this.delete()
         })
 
         $('#btnUpdate').click(e => {
@@ -36,11 +36,30 @@ export class UserController {
             $('#dashboard-form').show()
 
         })
+
+
     }
 
+    delete(){
+        var settings = {
+            "url": "http://localhost:8081/api/v1/user?email="+$('#email').val(),
+            "method": "DELETE",
+            "timeout": 0,
+            "headers": {
+                "Authorization": "Bearer " + getKey()
+            },
+            "processData": false,
+            "mimeType": "multipart/form-data",
+            "contentType": false,
+        };
 
 
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+            $('#btnClear').trigger('click');
+        });
 
+    }
 
     updateUser() {
         let userName = $('#userName').val();
@@ -63,28 +82,36 @@ export class UserController {
         form.append("password", password);
         form.append("gender", gender);
         form.append("contact", contact);
-        if (profilePic)
+        form.append("nicNo", nicNo);
+        if (profilePic) {
             form.append("profilePic", profilePic, "ab.jpg");
-        if (nicFront)
+        }
+        if (nicFront) {
             form.append("nicFront", nicFront, "aa.jpg");
-        if (nicRear)
+        }
+        if (nicRear) {
+
             form.append("nicRear", nicRear, "ac.jpg");
 
+        }
 
-        form.append("nicNo", nicNo);
+       /* if(!profilePic){
+            profilePic=this.dataURLtoFile($('#profilePic-img-show').attr("src"),"")
+        }*/
 
-        var settings = {
-            "url": "http://localhost:8081/api/v1/user/0",
-            "method": "PUT",
-            "timeout": 0,
-            "headers": {
-                "Authorization": "Bearer " + getKey()
-            },
-            "processData": false,
-            "mimeType": "multipart/form-data",
-            "contentType": false,
-            "data": form
-        };
+            var settings = {
+                "url": "http://localhost:8081/api/v1/user/0",
+                "method": "PUT",
+                "timeout": 0,
+                "headers": {
+                    "Authorization": "Bearer " + getKey()
+                },
+                "processData": false,
+                "mimeType": "multipart/form-data",
+                "contentType": false,
+                "data": form
+            };
+
 
         $.ajax(settings).done(function (response) {
             console.log(response);
@@ -94,9 +121,7 @@ export class UserController {
     }
 
 
-
-
-    searchCustomer(email){
+    searchCustomer(email) {
         var settings = {
             "url": "http://localhost:8081/api/v1/user/0/" + email,
             "method": "GET",
@@ -109,11 +134,11 @@ export class UserController {
         $.ajax(settings).done(function (responseData) {
 
             $("#email").prop('readonly', true);
-           /* console.log(responseData.nicFrontByte)
-            console.log(responseData.nicRearByte)
-            console.log(responseData.profilePic)
-            console.log(responseData.nicFront)
-            console.log(responseData.nicRear)*/
+            /* console.log(responseData.nicFrontByte)
+             console.log(responseData.nicRearByte)
+             console.log(responseData.profilePic)
+             console.log(responseData.nicFront)
+             console.log(responseData.nicRear)*/
             console.log(responseData.password)
 
             $('#userName').val(responseData.username);
@@ -129,13 +154,25 @@ export class UserController {
 
             $('#nicFront-img-show').attr('src', "data:image/jpeg;base64," + responseData.nicFront); // Set the src attribute for an image element
             $('#nicRear-img-show').attr('src', "data:image/jpeg;base64," + responseData.nicRear);   // Set the src attribute for an image element
-           $('#gender').val(responseData.gender)
+            $('#gender').val(responseData.gender)
             $('#profilePic-img-show').attr('src', "data:image/jpeg;base64," + responseData.profilePic); // Set the src attribute for an image element
 
 
             $('#search').val('')
 
         });
+    }
+
+    dataURLtoFile(dataurl, filename) {
+        var arr = dataurl.split(','),
+            mime = arr[0].match(/:(.*?);/)[1],
+            bstr = atob(arr[arr.length - 1]),
+            n = bstr.length,
+            u8arr = new Uint8Array(n);
+        while(n--){
+            u8arr[n] = bstr.charCodeAt(n);
+        }
+        return new File([u8arr], filename, {type:mime});
     }
 
 
@@ -206,9 +243,7 @@ export class UserController {
         });
 
 
-
     }
-
 
     clearForm() {
         $("#userName").val('');
@@ -226,7 +261,13 @@ export class UserController {
         $("#nicRear-img-show").attr('src', '');
         $("#nicFront-img-show").attr('src', '');
         // $("#user_email").prop('readonly', false);
+
+
     }
+
+
+
+
 }
 
 new UserController()

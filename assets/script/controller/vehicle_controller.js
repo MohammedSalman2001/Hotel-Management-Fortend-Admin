@@ -195,3 +195,10 @@ export class VehicleController{
 
 }
 new VehicleController();
+
+/*$('#v').click(function (){
+
+    /!*$('#dashboard-form').show()
+    $('#vehicle-form').hide()*!/
+    alert("sss")
+})*/
